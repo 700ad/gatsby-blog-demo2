@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Cyrene";
+  src: url("../fonts/Cyrene.otf");
+}
+@font-face {
+  font-family: "Nord";
+  src: url("../fonts/Nord-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Nord";
+  src: url("../fonts/Nord-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+.pop {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.cyr {
+  font-family: "Cyrene", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nord {
+  font-family: "Nord", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}

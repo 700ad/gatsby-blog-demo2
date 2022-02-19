@@ -137,60 +137,60 @@ export const query = graphql`
         title
       }
     }
-    fourthSection: datoCmsFourthSection {
-      subcript
-      sectionHeading
-      sectionBody
-      photo1 {
-        url
-        alt
-        title
-      }
-      photo2 {
-        url
-        alt
-        title
-      }
-      photo3 {
-        url
-        alt
-        title
-      }
-      photo4 {
-        url
-        alt
-        title
-      }
-    }
-    fifthSection: datoCmsFifthSection {
-      subcript
-      sectionHeading
-      sectionBody
-      photo {
-        url
-        alt
-        title
-      }
-    }
-    sixthSection: datoCmsSixthSection {
-      subcript
-      sectionHeading
-      sectionBody
-      photo1 {
-        url
-        alt
-        title
-      }
-      photo2 {
-        url
-        alt
-        title
-      }
-      photo3 {
-        url
-        alt
-        title
-      }
+    # fourthSection: datoCmsFourthSection {
+    #   subcript
+    #   sectionHeading
+    #   sectionBody
+    #   photo1 {
+    #     url
+    #     alt
+    #     title
+    #   }
+    #   photo2 {
+    #     url
+    #     alt
+    #     title
+    #   }
+    #   photo3 {
+    #     url
+    #     alt
+    #     title
+    #   }
+    #   photo4 {
+    #     url
+    #     alt
+    #     title
+    #   }
+    # }
+    # fifthSection: datoCmsFifthSection {
+    #   subcript
+    #   sectionHeading
+    #   sectionBody
+    #   photo {
+    #     url
+    #     alt
+    #     title
+    #   }
+    # }
+    # sixthSection: datoCmsSixthSection {
+    #   subcript
+    #   sectionHeading
+    #   sectionBody
+    #   photo1 {
+    #     url
+    #     alt
+    #     title
+    #   }
+    #   photo2 {
+    #     url
+    #     alt
+    #     title
+    #   }
+    #   photo3 {
+    #     url
+    #     alt
+    #     title
+    #   }
     }
     # site: datoCmsSite {
     #   favicon: faviconMetaTags {

@@ -21,7 +21,9 @@ const Scroll = (callbacks) => {
 
     locomotiveScroll.on("scroll", (func) => {
       // Update `data-direction` with scroll direction.
-      document.documentElement.setAttribute("data-direction", func.direction);
+      if (document !== undefined) {
+        document.documentElement.setAttribute("data-direction", func.direction);
+      }
     });
 
     return () => {

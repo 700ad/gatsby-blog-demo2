@@ -92,19 +92,17 @@ export default function Index({ data: { hero, secondSection, thirdSection, fourt
           <div className="flex flex-col items-start justify-start">
             <div className="flex items-center justify-start">
               <div className="mr-4 bar w-20 bg-orange-600"></div>
-              <p className="nord font-thin text-xl">The Suites</p>
+              <p className="nord font-thin text-xl">{fourthSection.subscript}</p>
             </div>
-            <h2 className="text-8xl mt-8 cyr text-orange-600">Wake Up Inspired</h2>
-            <p className="text-xl pop font-light text-orange-600 w-3/4 text-justify mt-8">
-              Escape hotel lies on the slopes of Kallar Kahar Forest - at the footsteps of Kallar Kahar National Park. An unrivalled location to experience the breathtaking beauty of the region.
-            </p>
+            <h2 className="text-8xl mt-8 cyr text-orange-600">{fourthSection.sectionHeading}</h2>
+            <p className="text-xl pop font-light text-orange-600 w-3/4 text-justify mt-8">{fourthSection.sectionBody}</p>
           </div>
         </div>
         <div data-scroll="" className="w-screen flex items-center overflow-x-hidden justify-between">
-          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-orange-50 mt-24 ml-40"></div>
-          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-orange-50 mt-24 ml-20"></div>
-          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-orange-50 mt-24 ml-20"></div>
-          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-orange-50 mt-24 ml-20"></div>
+          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-green-50 mt-24 ml-40"></div>
+          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-green-50 mt-24 ml-20"></div>
+          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-green-50 mt-24 ml-20"></div>
+          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-green-50 mt-24 ml-20"></div>
         </div>
       </section>
     </Layout>
@@ -137,31 +135,31 @@ export const query = graphql`
         title
       }
     }
-    # fourthSection: datoCmsFourthSection {
-    #   subcript
-    #   sectionHeading
-    #   sectionBody
-    #   photo1 {
-    #     url
-    #     alt
-    #     title
-    #   }
-    #   photo2 {
-    #     url
-    #     alt
-    #     title
-    #   }
-    #   photo3 {
-    #     url
-    #     alt
-    #     title
-    #   }
-    #   photo4 {
-    #     url
-    #     alt
-    #     title
-    #   }
-    # }
+    fourthSection: datoCmsFourthSection {
+      subcript
+      sectionHeading
+      sectionBody
+      # photo1 {
+      #   url
+      #   alt
+      #   title
+      # }
+      # photo2 {
+      #   url
+      #   alt
+      #   title
+      # }
+      # photo3 {
+      #   url
+      #   alt
+      #   title
+      # }
+      # photo4 {
+      #   url
+      #   alt
+      #   title
+      # }
+    }
     # fifthSection: datoCmsFifthSection {
     #   subcript
     #   sectionHeading
@@ -191,39 +189,5 @@ export const query = graphql`
     #     alt
     #     title
     #   }
-    }
-    # site: datoCmsSite {
-    #   favicon: faviconMetaTags {
-    #     ...GatsbyDatoCmsFaviconMetaTags
-    #   }
-    # }
-    # blog: datoCmsBlog {
-    #   seo: seoMetaTags {
-    #     ...GatsbyDatoCmsSeoMetaTags
-    #   }
-    # }
-    # allPosts: allDatoCmsPost(sort: { fields: date, order: DESC }, limit: 20) {
-    #   nodes {
-    #     title
-    #     slug
-    #     excerpt
-    #     date
-    #     coverImage {
-    #       large: gatsbyImageData(width: 1500)
-    #       small: gatsbyImageData(width: 760)
-    #     }
-    #     author {
-    #       name
-    #       picture {
-    #         gatsbyImageData(
-    #           layout: FIXED
-    #           width: 48
-    #           height: 48
-    #           imgixParams: { sat: -100 }
-    #         )
-    #       }
-    #     }
-    #   }
-    # }
   }
 `;

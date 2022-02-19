@@ -35,3 +35,84 @@
 .nord {
   font-family: "Nord", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+
+.a-fixed_wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+@media (min-width: 1000px) {
+  .a-fixed_wrapper {
+    height: 100vh;
+  }
+}
+@media (max-width: 999px) {
+  .a-fixed_wrapper {
+    height: 50vh;
+  }
+}
+.a-fixed_target {
+  bottom: -100vh;
+}
+.a-fixed,
+.a-fixed_target {
+  position: absolute;
+  top: -100vh;
+  right: 0;
+  left: 0;
+}
+.a-fixed {
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  opacity: 1;
+}
+.bar {
+  height: 0.12rem;
+}
+.sq {
+  width: 100rem;
+  height: 20rem;
+}
+
+.h-90 {
+  height: 90vh;
+}
+.w-90 {
+  width: 90vw;
+}
+.hi {
+  height: 50vh;
+}
+
+/* .section-2 {
+  height: calc(300vh + 32px + 16px);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 40% 60%;
+  color: white;
+  blockquote {
+    font-size: 5vmin;
+    padding: 16px 16px 0 16px;
+
+    cite {
+      display: block;
+    }
+  }
+
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 8px;
+    gap: 8px;
+    margin-top: 16px;
+
+    img {
+      width: 100%;
+      max-height: 75vh;
+      height: 100%;
+      align-self: stretch;
+      object-fit: cover;
+    }
+  }
+} */

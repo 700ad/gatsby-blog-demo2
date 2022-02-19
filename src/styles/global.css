@@ -1,10 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-  font-family: "Cyrene";
-  src: url("../fonts/Cyrene.otf");
+body {
+  background-color: black;
 }
+
+@font-face {
+  font-family: "Myanmar";
+  src: url("../fonts/Myanmar\ MN\ Regular.ttf");
+}
+
 @font-face {
   font-family: "Nord";
   src: url("../fonts/Nord-Regular.ttf");
@@ -30,7 +35,7 @@
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .cyr {
-  font-family: "Cyrene", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Myanmar", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .nord {
   font-family: "Nord", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;

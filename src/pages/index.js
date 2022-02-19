@@ -18,7 +18,7 @@ export default function Index({ data: { hero, secondSection, thirdSection, fourt
             <span className="ml-2 uppercase">Menu</span>
           </div>
           <div className="w-1/3 flex items-center justify-center">
-            <svg className="h-10 w-10" xmlns="http://www.w3.org/2000/svg" width="575.154" height="452.934" viewBox="0 0 575.154 452.934">
+            <svg className="h-12 w-12" xmlns="http://www.w3.org/2000/svg" width="575.154" height="452.934" viewBox="0 0 575.154 452.934">
               <defs>
                 <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.791" gradientUnits="objectBoundingBox">
                   <stop offset="0" stop-color="#279af1" />
@@ -48,7 +48,7 @@ export default function Index({ data: { hero, secondSection, thirdSection, fourt
           </div>
           <div data-scroll="" className="absolute z-20 top-0 w-screen h-screen flex flex-col items-center justify-center">
             <div data-scroll data-scroll-speed="1" className="container flex items-center justify-center mx-auto text-center">
-              <h1 className="text-8xl cyr w-7/12 leading-none text-white">{hero.herotext}</h1>
+              <h1 className="text-8xl cyr w-11/12 font-light uppercase leading-none text-orange-50">{hero.herotext}</h1>
             </div>
             <svg data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" className="w-10 absolute bottom-10 h-10" xmlns="http://www.w3.org/2000/svg" width="575.154" height="452.934" viewBox="0 0 575.154 452.934">
               <path
@@ -62,20 +62,20 @@ export default function Index({ data: { hero, secondSection, thirdSection, fourt
           </div>
         </header>
       </div>
-      <section className="w-screen pt-40 pb-40 bg-orange-50">
+      <section className="w-screen pt-40 pb-40  bg-orange-50">
         <div className="container flex items-center justify-center mx-auto">
           <p className="text-5xl leading-snug font-light pop text-center w-7/12">{secondSection.sectionParagraph}</p>
         </div>
       </section>
       <section className="bg-black text-white w-screen py-40">
         <div className="container mx-auto grid grid-cols-2 gap-16">
-          <div className="flex flex-col items-start justify-start">
+          <div className="flex flex-col pr-20 items-start justify-start">
             <div className="flex items-center justify-start">
-              <div className="mr-4 bar w-20 bg-orange-600"></div>
+              <div className="mr-4 bar w-20 bg-orange-500"></div>
               <p className="nord font-thin text-xl">{thirdSection.subscript}</p>
             </div>
-            <h2 className="text-8xl leading-none mt-8 cyr text-orange-600">{thirdSection.sectionHeading}</h2>
-            <p className="text-xl pop font-light text-orange-600 w-3/4 text-justify mt-8">{thirdSection.sectionBody}</p>
+            <h2 className="text-7xl font-light leading-none mt-8 cyr text-orange-500">{thirdSection.sectionHeading}</h2>
+            <p className="text-xl pop font-light text-orange-500 w-3/4 text-justify mt-8">{thirdSection.sectionBody}</p>
           </div>
           <div data-scroll className="col-span-1 relative flex">
             <div data-scroll data-scroll-speed="2" className="rounded-md h-full overflow-hidden relative z-20 w-2/4 object-cover">
@@ -91,18 +91,18 @@ export default function Index({ data: { hero, secondSection, thirdSection, fourt
         <div className="container mx-auto grid grid-cols-2 gap-16">
           <div className="flex flex-col items-start justify-start">
             <div className="flex items-center justify-start">
-              <div className="mr-4 bar w-20 bg-orange-600"></div>
-              <p className="nord font-thin text-xl">{fourthSection.subscript}</p>
+              <div className="mr-4 bar w-20 bg-orange-500"></div>
+              <p className="nord font-thin text-xl">{fourthSection.subcript}</p>
             </div>
-            <h2 className="text-8xl mt-8 cyr text-orange-600">{fourthSection.sectionHeading}</h2>
-            <p className="text-xl pop font-light text-orange-600 w-3/4 text-justify mt-8">{fourthSection.sectionBody}</p>
+            <h2 className="text-7xl leading-none mt-8 cyr text-orange-500">{fourthSection.sectionHeading}</h2>
+            <p className="text-xl pop font-light text-orange-500 w-3/4 text-justify mt-8">{fourthSection.sectionBody}</p>
           </div>
         </div>
         <div data-scroll="" className="w-screen flex items-center overflow-x-hidden justify-between">
-          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-green-50 mt-24 ml-40"></div>
-          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-green-50 mt-24 ml-20"></div>
-          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-green-50 mt-24 ml-20"></div>
-          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-green-50 mt-24 ml-20"></div>
+          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-orange-50 mt-24 ml-40"></div>
+          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-orange-50 mt-24 ml-20"></div>
+          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-orange-50 mt-24 ml-20"></div>
+          <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className="sq bg-orange-50 mt-24 ml-20"></div>
         </div>
       </section>
     </Layout>

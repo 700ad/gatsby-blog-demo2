@@ -8,11 +8,13 @@ import { scroll } from "../theme";
 const Scroll = (callbacks) => {
   useEffect(() => {
     let locomotiveScroll;
-    locomotiveScroll = new LocomotiveScroll({
-      el: document.querySelector(scroll.container),
-      ...scroll.options,
-    });
-    locomotiveScroll.update();
+    if (document !== undefined) {
+      locomotiveScroll = new LocomotiveScroll({
+        el: document.querySelector(scroll.container),
+        ...scroll.options,
+      });
+      locomotiveScroll.update();
+    }
 
     // Exposing to the global scope for ease of use.
     window.scroll = locomotiveScroll;
